@@ -1,0 +1,11 @@
+```mermaid
+flowchart LR
+  A[Assets: Servers / Endpoints / Cloud / Containers] --> B[CIS Baselines]
+  B --> C[Assessment Platform (e.g., Qualys-like)]
+  C --> D[Validation & Triage]
+  D --> E[Remediation Tickets]
+  E --> F[Verification Re-scan]
+  F --> G[Closure / Exceptions]
+  G --> H[Reporting & Audit Evidence]
+  H --> I[GRC / Governance Oversight]
+```

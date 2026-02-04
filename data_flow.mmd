@@ -1,0 +1,11 @@
+```mermaid
+flowchart TD
+  S[Scan Results] --> V[Validate Findings]
+  V -->|True Gap| R[Remediate]
+  V -->|False Positive / NA| C[Close with Rationale]
+  R --> X[Re-scan Verify]
+  X --> C2[Close]
+  R -->|Not feasible| E[Exception Request]
+  E --> A[Approval & Review Date]
+  A --> C3[Exception Register]
+```
